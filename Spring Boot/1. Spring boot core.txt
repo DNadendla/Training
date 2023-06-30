@@ -1,0 +1,58 @@
+1. What is Spring FW and uses | Stand-alone vs Web vs Distributed applications
+
+2. What is Spring Boot and uses
+
+3. Spring vs Spring Boot
+
+4. Web application development w.r.to Spring and Spring boot [DS VR cofiguration..etc]
+
+5. Advantages of Spring Boot (Starter POMs, Auto config, Embedded servers & DB, Actuators, Rapid application development)
+
+6. Disadvantages of Spring Boot (Migration from Spring to Spring boot)
+
+7. Spring boot application structure 
+	src/main/java
+	src/main/test
+	src/main/resources
+	target
+	pom.xml
+
+8. Application.java or start class or Entrypoint class
+	@SpringBootApplication = combination of @SpringBootConfiguration 
+							+
+						@EnableAutoConfiguration
+							+
+						@ComponentScan
+	SpringApplication.run() use (Bootstrap process/Application starts from here)
+		1) figuring out type of application (stand-alone/web/reactive-web)
+		2) Initializers, Listeners loading
+		3) Stopwatch & Banner configuration
+		4) Application Context creation based on application type	
+		5) Prepares context -> loads beans in application	
+		6) Calling Runners
+		7) ConfigurableApplicationContext will be returned by run()
+
+9)ComponentScanning (@Component) and Base package convention (where Application/Entrypoint class avaialable)
+	Sterio Type annotations: @Component, @Controller, @RestController, @Service, @Repository
+
+10) Explicit Component Scanning -> [ @ComponentScan(basePackages = { "com.ashokit", "in.ashokit", "" }) ]
+
+11) Spring Bean (life-cycle managed by IOC container) & How to make a class as Spring Bean
+	[@Component, 
+	 	@Controller, @RestController, 
+		@Service, @Repository,
+	 @Configuration(class level), 
+	 @Bean(method level) --> to provide our own obj creation logic to IOC]
+		@Configuration vs @Bean annotation
+
+12) Component scanning order -> a) Base Package scanning 
+				b) Sub-packages (of base package) scanning
+				c) @Bean annotated methods get called in the end
+
+13) Dependency Injection
+
+14) @autowired (At Constructor level/Constructor Injection, At Setter level/Setter Injection, At Field level/Field Injection - Not recommended why?) s-16
+
+
+
+

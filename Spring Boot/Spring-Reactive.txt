@@ -1,0 +1,75 @@
+1) What is Reactive Programming? and Why Reactive Programming?
+
+2) Reactive Programming Specification - Reactive Streams
+
+3) Subscriber - Publisher model in Reactive Streams => Success & Error Scenarios
+
+4) Non-Blocking/Reactive API [Not Blocking the Thread]
+
+5) Spring WebFlux to Achieve Non-Blocking/Reactive behaviours
+
+6) Reactive Streams Specification (Publisher Subscriber Subscription Processor)
+
+7) Project Reactor impl of Reactive Stream Spec
+
+8) Flux and Mono Reactive Types
+
+9) Flux Reactor and Mono Reactor API documentation check
+
+10) Create a Flux and Subscribe to it
+
+11) Create a Mono and Subscribe to it
+
+12) log() internals on Flux/Mono  (onSubscribe, request, onNext, onNext, ... ,onNext, onComplete)
+
+13) Testing Mono & Flux using StepVerifier
+
+14) StepVerifier - create, expectNext, expectNextCount, verifyComplete methods
+
+15) Data transformation using operators in Project Reactor
+
+16) Reactive Streams are Immutable
+
+17) rective stream opeations using map(), filter(), flatMap()
+
+18) Asyn nature of flatMap()
+
+19) map (1 to 1 transformation) vs flatMap (1 to N transformation -> no order of processing)
+
+20) concatMap() -> same as flatMap but it preserves order
+
+21) flatMap with Mono
+
+22) flatMapMany 
+
+23) defaultIfEmpty(), switchIfEmpty()
+
+24) Combininig Reactive Streams using concat() and concatWith()
+
+25) merge() and mergeWith()
+
+26) concat() (sequential) vs merge() vs mergeSequetial()
+
+27) zip() and zipWith() on Flux and Mono
+
+28) spring web flux api doc
+
+reactive-spring-webflux-2 => New working code for project	
+
+Mongo DB Setup -> https://www.youtube.com/watch?v=Kp04tWqhSx0
+
+29) endponts to return Flux and Mono 
+
+30) Streaming Endpoint using Spring webflux
+
+31) Unit Test cases for Controller that has end-points that return reactive types(Flux/Mono/Streaming End Points)
+
+
+
+
+
+
+
+
+
+
